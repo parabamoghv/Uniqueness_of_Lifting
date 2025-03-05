@@ -1,10 +1,8 @@
 # Uniqueness of Path Lifting
 
--- Statement
-    -- statement.pdf : *contains the written statement of the theorem and proof sketch*
+-- Statement/statement.pdf : *contains the written statement of the theorem and proof sketch*
 
--- Uniquness
-    -- Basic.lean : *contains the lead4 code.*
+-- Uniquness/Basic.lean : *contains the lead4 code.*
 
 
 ## Goal: 
