@@ -1,16 +1,11 @@
 # Uniqueness of Path Lifting
 
--- Statement/statement.pdf : *contains the written statement of the theorem and proof sketch*
-
--- Uniquness/Basic.lean : *contains the lead4 code.*
-
-
 ## Goal: 
 Provide a formal proof of the uniqueness of path lifting over a covering space.
 
 ## The Statement: 
 
-The statement of the theorem and a sketch of the proof is at [View My Code](./Statement/statement.pdf).
+The written statement of the theorem and a sketch of the proof is at [Statement/statement.pdf](./Statement/statement.pdf). The lean4 code for the formal verification of the theorem is at [Uniqueness/Basic.lean](./Uniqueness/Basic.lean)
 
 
 ## Mathlib files used:
