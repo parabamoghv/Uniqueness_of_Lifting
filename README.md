@@ -1,7 +1,7 @@
 # Uniqueness of Path Lifting
 
 ## Goal: 
-Provide a formal proof of the uniqueness of path lifting over a covering space.
+Provide a formal proof of the uniqueness of path lifting over a covering space. Use lean4 to formally verify the theorem.
 
 ## The Statement: 
 
