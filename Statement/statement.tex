@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\newtheorem{theorem}{Theorem}
+
+\begin{document}
+\begin{theorem}
+    Let $f:E\to X$ be a covering map. Let $Y$ be a connected space  and $g:Y\to X$ be a continuous map. The two lifts $H_1,H_2:Y\to E$ of $g$ with respect to $f$ are equal if and only if there exists $y\in Y$ such that $\tilde{g}_1(y) = \tilde{g}_2(y)$.
+\end{theorem}
+
+
+
+
+Alternatively, we can state the theorem as follows:
+
+
+\begin{theorem}
+    Let $f:E\to X$ be a covering map. Let $Y$ be a topological space and $H_1, H_2:Y\to E$ be two continuous maps such that $$f\circ H_1 = f\circ H_2.$$
+    Suppose for every connected component $C$ of $Y$, there exists $y\in C$ such that $H_1(y) = H_2(y)$, then $H_1 = H_2.$
+\end{theorem}
+
+
+\begin{proof}[Proof sketch]
+    \underline{Claim 1}: If a closed and open set $S \subseteq  Y$ intersects with all the connected components of $Y$, then $S=Y$.
+
+    \underline{Claim 2}:  A set $S \subseteq Y$ is closed and open in $Y$ if and only if for every $y \in Y$
+    there is a neighborhood $U_y$ of $y$ such that $U_y \cap S$ is closed and open in $U_y$.
+
+    \underline{Claim 3}: If $f, g : X \to Y$ are continuous and $Y$ is a discrete topological space, then the set $\{x \in X \mid f(x) = g(x)\}$ is closed and open in $X$.
+    
+    We now proceed with the proof of the theorem.
+    Let $$S=\{y\in Y\mid H_1(y) = H_2(y)\}.$$ We will show that $S$ is closed and open in $Y$. Let $y\in Y$, since $f:E\to X$ is a covering space, we get open neighborhood $V_y\subseteq X$ of $(f\circ H_1)(y)$ such that 
+    \[
+        f^{-1}(V_y) \cong V_y \times D
+    \]
+    for a discrete space $D$.
+    Let 
+    \[
+        U_y = (f\circ H_1)^{-1}(V_y) = (f\circ H_2)^{-1}(V_y).
+    \]  
+    From claim 2, it is enough to show that $U_y\cap S$ is closed and open in $U_y$. Note that 
+    \[
+        U_y\cap S = \{u\in U_y\mid \text{Proj}_D(H_1(u)) = \text{Proj}_D(H_2(u)).\}
+    \] 
+    From claim 3, since $D$ is a discrete set, we get that $U_y\cap S$ is closed and open in $U_y$. Hence, $S$ is closed and open in $Y$. From assumption we get that $S$ intersects with all the connected components of $Y$. From claim 1, we get that $S=Y$. Hence, $H_1 = H_2$.
+\end{proof}
+
+\end{document}
