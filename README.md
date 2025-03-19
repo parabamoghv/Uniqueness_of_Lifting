@@ -18,6 +18,6 @@ The written statement of the theorem and a sketch of the proof is at [Statement/
 
 
 ## Result: 
-The theorem is formally verified by Lean4. Written 4 helping theorems and one main theorem. A total of 370 lines of code. 
+The theorem is formally verified by Lean4 with the help of 4 lemmas and one main theorem. A total of 370 lines of code. 
 
 
